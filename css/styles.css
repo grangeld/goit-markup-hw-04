@@ -299,6 +299,26 @@ ul {
 .section-list-name {
   background-color: #f5f4fa;
 }
+.list-name-social-network {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.list-name-social-network:hover {
+  background-color: #2196f3;
+  fill: #ffffff;
+}
+.list-name-social-network:hover .list-name-icon {
+  fill: #ffffff;
+}
+.list-name-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
 
 /* Разметка блоков */
 .container {
