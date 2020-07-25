@@ -683,8 +683,7 @@ ul {
   padding-left: 24px;
 }
 
-.content-portfolio-list:hover,
-.content-portfolio-list:focus {
+.content-portfolio-list:hover {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
 }
@@ -692,4 +691,17 @@ ul {
 .portfolio_line {
   border-bottom: 1px solid #ececec;
   min-width: 1200px;
+}
+
+.content-portfolio-link {
+  display: block;
+}
+
+/* .content-portfolio-link:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+  outline: none;
+} */
+.content-portfolio-list {
+  /* outline: none; */
 }
