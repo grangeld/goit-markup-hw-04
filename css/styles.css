@@ -69,12 +69,7 @@ ul {
   margin-right: 85px;
 }
 /*************  header  ******************/
-.header-menu {
-  color: var(--heading-text-color);
-  letter-spacing: 0.02em;
-  line-height: 1.14;
-  font-weight: 500;
-}
+
 .header-address > address {
   font-style: normal;
 }
@@ -89,7 +84,7 @@ ul {
   /* color: #757575; */
 }
 
-.header-menu.open::after {
+/* .header-menu.open::after {
   content: '';
   display: block;
   width: 56px;
@@ -98,6 +93,10 @@ ul {
   border-radius: 2px;
   margin-top: 28px;
   position: absolute;
+} */
+
+.header-menu.open::after {
+  width: 87px;
 }
 
 .header-menu:hover,
@@ -389,6 +388,11 @@ ul {
   display: block;
   padding-bottom: 32px;
   padding-top: 32px;
+  color: var(--heading-text-color);
+  letter-spacing: 0.02em;
+  line-height: 1.14;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .address-navigation-icon {
@@ -683,4 +687,9 @@ ul {
 .content-portfolio-list:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio_line {
+  border-bottom: 1px solid #ececec;
+  min-width: 1200px;
 }
