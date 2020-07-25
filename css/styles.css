@@ -104,9 +104,11 @@ ul {
 .header-menu:focus,
 .header-menu.open,
 .header-address:focus,
-.header-address:hover {
+.header-address:hover,
+.header-address:focus .address-navigation-icon,
+.header-address:hover .address-navigation-icon {
   color: var(--link-changing-color);
-  /* color: red; */
+  fill: var(--link-changing-color);
 }
 
 /*******************  Секции  ***********************/
@@ -385,6 +387,12 @@ ul {
   display: block;
   padding-bottom: 32px;
   padding-top: 32px;
+}
+
+.address-navigation-icon {
+  margin-right: 10px;
+  fill: var(--header-email-telefon);
+  vertical-align: middle;
 }
 
 /******* секция about us*********/
