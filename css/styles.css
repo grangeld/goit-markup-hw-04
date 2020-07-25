@@ -121,6 +121,12 @@ ul {
   /* background-color: rgba(47, 48, 58, 0.8); */
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  background-color: black;
+  /* min-width: 1600px; */
+
+  margin-left: auto;
+  margin-right: auto;
 
   /* width: 1600px; */
 }
@@ -223,6 +229,8 @@ ul {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--text-on-background);
+  display: block;
+  margin-bottom: 20px;
 }
 
 .footer-address {
@@ -293,6 +301,13 @@ ul {
   list-style-type: none;
 }
 
+.section-name-list {
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+
+  border-radius: 0px 0px 4px 4px;
+}
+
 .footer {
   background-color: #2f303a;
 }
@@ -307,11 +322,13 @@ ul {
   height: 44px;
   border-radius: 50%;
 }
-.list-name-social-network:hover {
+.list-name-social-network:hover,
+.list-name-social-network:focus {
   background-color: #2196f3;
   fill: #ffffff;
 }
-.list-name-social-network:hover .list-name-icon {
+.list-name-social-network:hover .list-name-icon,
+.list-name-social-network:focus .list-name-icon {
   fill: #ffffff;
 }
 .list-name-icon {
@@ -488,7 +505,7 @@ ul {
   margin-right: 10px;
 }
 
-/************* секция наши клиенты******************/
+/************* секция постоянные клиенты******************/
 .section-customers {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -505,6 +522,29 @@ ul {
 
 .section-customers .customers-link:not(:last-child) {
   margin-right: 30px;
+}
+
+.section-customers-icon {
+  fill: #afb1b8;
+}
+.section-customers-link:focus,
+.section-customers-link:hover {
+  border-color: #2196f3;
+}
+.section-customers-link:hover .section-customers-icon,
+.section-customers-link:focus .section-customers-icon {
+  fill: #2196f3;
+}
+
+.section-customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 /******************  Футер *********************/
@@ -532,6 +572,37 @@ ul {
   padding-top: 12px;
 }
 
+.footer-join-icon {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  /* background-color: rgba(47, 48, 58, 0.9); */
+  background-color: #43444d;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-join-icon:hover {
+  background-color: #2196f3;
+}
+
+.footer-list-style {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  display: flex;
+}
+
+.footer-join-list:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-list-name-icon {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
 /********************  portfolio.html  ****************************/
 .section-content-portfolio .container {
   /* display: flex; */
